@@ -1,6 +1,6 @@
 {
   "name": "keycloak_flutter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "[![pub package](https://img.shields.io/pub/v/keycloak_flutter.svg)](https://pub.dev/packages/keycloak_flutter)",
   "main": "index.js",
   "directories": {

@@ -74,6 +74,18 @@ class KeycloakService {
     return _keycloak.authenticated;
   }
 
+  String? get token {
+    return authenticated ? _keycloak.token : null;
+  }
+
+  String? get refreshToken {
+    return authenticated ? _keycloak.refreshToken : null;
+  }
+
+  String? get idToken {
+    return authenticated ? _keycloak.idToken : null;
+  }
+
   Future<String> getToken([bool forceLogin = false]) async {
     await this.updateToken(10);
     return this._keycloak.token;
